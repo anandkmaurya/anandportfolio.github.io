@@ -20,6 +20,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
             </ul>
+            <img src="sun.png" id="icon">
             <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
@@ -86,7 +87,7 @@
                 <i class="fa-solid fa-crop"></i>
                 <h2>UI/UX Design</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eum nam culpa velit veritatis odio repellat at aliquid? Culpa quam dignissimos id ipsa officia nisi dolore beatae voluptatem illum perspiciatis.</p>
-                <a href="#">Learn More</a>
+                <a href="#">Learn More</a> 
             </div>
             <div>
                 <i class="fa-brands fa-app-store-ios"></i>
@@ -140,7 +141,6 @@
                 <p><i class="fa-solid fa-phone"></i> 8765788387</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/anand-kumar-maurya-bb4104227/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/anandkmaurya"><i class="fa-brands fa-github"></i></a>
                     <a href="https://twitter.com/anandM1203"><i class="fa-brands fa-square-twitter"></i></a>
                     <a href="https://www.instagram.com/debug_code_/"><i class="fa-brands fa-square-instagram"></i></a>
                 </div>
@@ -210,6 +210,21 @@ const msg = document.getElementById("msg")
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script>
+    var icon = document.getElementById("icon");
+    var header = document.getElementById("header");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("white-theme");
+        if(document.body.classList.contains("white-theme")){
+            icon.src = "moon.png";
+        }else{
+            icon.src = "sun.png"
+        }
+    }
+
+
   </script>
 </body>
 </html>
