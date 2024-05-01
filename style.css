@@ -12,7 +12,7 @@
    
 }
 .white-theme{ 
-    --primary-color:#fff;
+    --primary-color:#fff; 
     --secondary-color:#080800;
     --fourth-color:#b7b7b7;
     --backgound-image:url(whiti.jpg);
